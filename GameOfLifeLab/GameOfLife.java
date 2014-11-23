@@ -1,6 +1,7 @@
 import info.gridworld.actor.Actor;
 import info.gridworld.actor.ActorWorld;
 import info.gridworld.actor.Rock;
+import info.gridworld.actor.Bug;
 import info.gridworld.grid.Grid;
 import info.gridworld.grid.BoundedGrid;
 import info.gridworld.grid.Location;
@@ -22,10 +23,13 @@ public class GameOfLife
     private final int COLS = 5;
     
     // constants for the location of the three cells initially alive
-    private final int X1 = 0, Y1 = 2;
-    private final int X2 = 2, Y2 = 0;
-    private final int X3 = 2, Y3 = 1;
-
+    private final int X1 = 2, Y1 = 1;
+    private final int X2 = 1, Y2 = 2;
+    private final int X3 = 2, Y3 = 2;
+    private final int X4 = 3, Y4 = 2;
+    private final int X5 = 1, Y5 = 3;
+    private final int X6 = 3, Y6 = 3;
+    
     /**
      * Default constructor for objects of class GameOfLife
      * 
