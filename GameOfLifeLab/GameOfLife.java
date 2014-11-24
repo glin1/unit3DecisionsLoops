@@ -190,9 +190,9 @@ public class GameOfLife
                             count=0;
                             a=0;
                         }
-                        }
+                        
                     }
-                    }
+                    
                     
                     
                     
@@ -203,11 +203,11 @@ public class GameOfLife
                     
                     
                 }
-                }
+                
             }
-            }
+            
         }
-        }
+        
         
     }
     
