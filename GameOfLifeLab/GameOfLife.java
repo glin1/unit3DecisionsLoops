@@ -116,9 +116,6 @@ public class GameOfLife
         // populate the game
         populateGame();
         
-        // display the newly constructed and populated world
-        world.show();
-        
         int count =0;
         int a=0;
         int b=0;
@@ -244,6 +241,8 @@ public class GameOfLife
                 }   
             }
         }
+        // display the newly constructed and populated world
+        world.show();
     }
     
     /**
@@ -286,10 +285,15 @@ public class GameOfLife
      * Creates an instance of this class. Provides convenient execution.
      *
      */
-    public static void main(String[] args)
+    public static void main(String[] args) throws InterruptedException
     {
         GameOfLife game = new GameOfLife();
-        game.createNextGeneration();
+        while (true)
+        {
+            Thread.sleep(500);
+            game.createNextGeneration();
+        }
+    
     }
 
 }
