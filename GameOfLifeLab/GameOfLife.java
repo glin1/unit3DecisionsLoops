@@ -19,16 +19,16 @@ public class GameOfLife
     private ActorWorld world;
     
     // the game board will have 5 rows and 5 columns
-    private final int ROWS = 5;
-    private final int COLS = 5;
+    private final int ROWS = 7;
+    private final int COLS = 7;
     
     // constants for the location of the three cells initially alive
-    private final int X1 = 2, Y1 = 1;
-    private final int X2 = 1, Y2 = 2;
-    private final int X3 = 2, Y3 = 2;
-    private final int X4 = 3, Y4 = 2;
-    private final int X5 = 1, Y5 = 3;
-    private final int X6 = 3, Y6 = 3;
+    private final int X1 = 2, Y1 = 3;
+    private final int X2 = 3, Y2 = 2;
+    private final int X3 = 3, Y3 = 3;
+    private final int X4 = 3, Y4 = 4;
+    private final int X5 = 4, Y5 = 2;
+    private final int X6 = 4, Y6 = 4;
     
     /**
      * Default constructor for objects of class GameOfLife
