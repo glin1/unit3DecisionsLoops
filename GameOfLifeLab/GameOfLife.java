@@ -242,7 +242,7 @@ public class GameOfLife
             }
         }
         // display the newly constructed and populated world
-        world.show();
+        world.setGrid(grid2);
     }
     
     /**
