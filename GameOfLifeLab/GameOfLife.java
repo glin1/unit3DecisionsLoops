@@ -66,17 +66,29 @@ public class GameOfLife
         Grid<Actor> grid = world.getGrid();
         
         // create and add rocks (a type of Actor) to the three intial locations
-        Rock rock1 = new Rock();
+        Flower flower1 = new Flower();
         Location loc1 = new Location(X1, Y1);
-        grid.put(loc1, rock1);
+        grid.put(loc1, flower1);
         
-        Rock rock2 = new Rock();
+        Flower flower2 = new Flower();
         Location loc2 = new Location(X2, Y2);
-        grid.put(loc2, rock2);
+        grid.put(loc2, flower2);
         
-        Rock rock3 = new Rock();
+        Flower flower3 = new Flower();
         Location loc3 = new Location(X3, Y3);
-        grid.put(loc3, rock3);
+        grid.put(loc3, flower3);
+        
+        Flower flower4 = new Flower();
+        Location loc4 = new Location(X4, Y4);
+        grid.put(loc4, flower4);
+        
+        Flower flower5 = new Flower();
+        Location loc5 = new Location(X5, Y5);
+        grid.put(loc5, flower5);
+        
+        Flower flower6 = new Flower();
+        Location loc6 = new Location(X6, Y6);
+        grid.put(loc6, flower6);
     }
 
     /**
