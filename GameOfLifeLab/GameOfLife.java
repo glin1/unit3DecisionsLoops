@@ -219,7 +219,7 @@ public class GameOfLife
         
                     while (a>0)
                     {
-                        if (count=5)
+                        if (count==5)
                         {
                             Location loc2=new Location (x,y);
                             Flower flower2= new Flower();
@@ -227,7 +227,7 @@ public class GameOfLife
                             count=0;
                             a=0;
                         }
-                        else if (count=5 || count=6)
+                        else if (count==5 || count==6)
                         {
                             Location loc4 = new Location(x, y);
                             Actor actor = world.getGrid().get(loc4);
