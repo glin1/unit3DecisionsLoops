@@ -110,9 +110,6 @@ public class GameOfLife
         //create the grid, of the specified size, that contains Actors
         BoundedGrid<Actor> grid2 = new BoundedGrid<Actor>(ROWS, COLS);
         
-        // create a world based on the grid
-        world = new ActorWorld(grid2);
-        
         int count =0;
         int a=0;
         int b=0;
