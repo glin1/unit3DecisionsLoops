@@ -130,48 +130,94 @@ public class GameOfLife
             {
                 for (int y=1; y<5; y++)
                 {
-                    if ((x-1,y-1) = null)
+                    if  ( b<3)
                     {
-                        count++;
-                        a++;
-                    }
-                    if ((x-1,y) = null)
-                    {
-                        count++;
-                        a++;
-                    }
-                    
-                    if ((x-1,y+1) = null)
-                    {
-                        count++;
-                        a++;
-                    }
-                    if ((x,y-1) = null)
-                    {
-                        count++;
-                        a++;
-                    }
-                    if ((x,y+1) = null)
-                    {
-                        count++;
-                        a++;
-                    }
-                    if ((x+1,y-1) = null)
-                    {
-                        count++;
-                        a++;
-                    }
-                    if ((x+1,y) = null)
-                    {
-                        count++;
-                        a++;
-                    }
-                    if ((X+1,y+1) = null)
-                    {
-                        count++;
-                        a++;
+                        Location loc4 = new Location(x-1, y-1);
+                        Actor actor = world.getGrid().get(loc4);
+                        if (actor == null)
+                        {
+                            count++;
+                            a++;
+                        }
                     }
                     
+                    if  ( b<3)
+                    {
+                        Location loc4 = new Location(x-1, y);
+                        Actor actor = world.getGrid().get(loc4);
+                        if (actor == null)
+                        {
+                            count++;
+                            a++;
+                        }
+                    }
+                    
+                    if  ( b<3)
+                    {
+                        Location loc4 = new Location(x-1, y+1);
+                        Actor actor = world.getGrid().get(loc4);
+                        if (actor == null)
+                        {
+                            count++;
+                            a++;
+                        }
+                    }
+                    
+                    if  ( b<3)
+                    {
+                        Location loc4 = new Location(x, y-1);
+                        Actor actor = world.getGrid().get(loc4);
+                        if (actor == null)
+                        {
+                            count++;
+                            a++;
+                        }
+                    }
+                    
+                    if  ( b<3)
+                    {
+                        Location loc4 = new Location(x, y+1);
+                        Actor actor = world.getGrid().get(loc4);
+                        if (actor == null)
+                        {
+                            count++;
+                            a++;
+                        }
+                    }
+                    
+                    if  ( b<3)
+                    {
+                        Location loc4 = new Location(x+1, y-1);
+                        Actor actor = world.getGrid().get(loc4);
+                        if (actor == null)
+                        {
+                            count++;
+                            a++;
+                        }
+                    }
+                    
+                    if  ( b<3)
+                    {
+                        Location loc4 = new Location(x+1, y);
+                        Actor actor = world.getGrid().get(loc4);
+                        if (actor == null)
+                        {
+                            count++;
+                            a++;
+                        }
+                    }
+                    
+                    if  ( b<3)
+                    {
+                        Location loc4 = new Location(x+1, y+1);
+                        Actor actor = world.getGrid().get(loc4);
+                        if (actor == null)
+                        {
+                            count++;
+                            a++;
+                        }
+                    }
+        
                     while (a>0)
                     {
                         if (count=5)
@@ -182,33 +228,23 @@ public class GameOfLife
                             count=0;
                             a=0;
                         }
-                        else if ((count=5 || count=6) && (x,y) != null)
+                        else if (count=5 || count=6)
                         {
-                            Location loc2=new Location (x,y);
-                            Flower flower2= new Flower();
-                            grid2.put (loc2,flower2);
+                            Location loc4 = new Location(x, y);
+                            Actor actor = world.getGrid().get(loc4);
+                            if (actor != null)
+                            {
+                                Location loc2=new Location (x,y);
+                                Flower flower2= new Flower();
+                                grid2.put (loc2,flower2);
+                            }
                             count=0;
                             a=0;
                         }
-                        
                     }
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                }
-                
+                }   
             }
-            
         }
-        
-        
     }
     
     /**
