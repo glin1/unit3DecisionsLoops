@@ -120,7 +120,72 @@ public class GameOfLife
         // display the newly constructed and populated world
         world.show();
         
-        int count
+        int count =0;
+        int a=0;
+        int b=0;
+        while (b<3)
+        {
+            b++;
+            for (int x=1; x<5; x++)
+            {
+                for (int y=1; y<5; y++)
+                {
+                    if ((x-1,y-1) = null)
+                    {
+                        count++;
+                        a++;
+                    }
+                    if ((x-1,y) = null)
+                    {
+                        count++;
+                        a++;
+                    }
+                    
+                    if ((x-1,y+1) = null)
+                    {
+                        count++;
+                        a++;
+                    }
+                    if ((x,y-1) = null)
+                    {
+                        count++;
+                        a++;
+                    }
+                    if ((x,y+1) = null)
+                    {
+                        count++;
+                        a++;
+                    }
+                    if ((x+1,y-1) = null)
+                    {
+                        count++;
+                        a++;
+                    }
+                    if ((x+1,y) = null)
+                    {
+                        count++;
+                        a++;
+                    }
+                    if ((X+1,y+1) = null)
+                    {
+                        count++;
+                        a++;
+                    }
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                }
+                }
+            }
+            }
+        }
+        }
         
     }
     
