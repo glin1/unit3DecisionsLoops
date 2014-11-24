@@ -10,7 +10,7 @@ import info.gridworld.grid.Location;
  * Also demonstrates how to provide accessor methods to make the class testable by unit tests.
  * 
  * @author @gcschmit
- * @version 18 July 2014
+ * @version 24 Nov 2014
  */
 public class GameOfLife
 {
