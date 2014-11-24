@@ -289,6 +289,7 @@ public class GameOfLife
     public static void main(String[] args)
     {
         GameOfLife game = new GameOfLife();
+        game.createNextGeneration();
     }
 
 }
