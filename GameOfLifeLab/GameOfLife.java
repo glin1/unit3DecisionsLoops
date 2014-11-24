@@ -113,9 +113,6 @@ public class GameOfLife
         // create a world based on the grid
         world = new ActorWorld(grid2);
         
-        // populate the game
-        populateGame();
-        
         int count =0;
         int a=0;
         int b=0;
