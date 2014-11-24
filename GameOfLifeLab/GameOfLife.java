@@ -172,6 +172,28 @@ public class GameOfLife
                         a++;
                     }
                     
+                    while (a>0)
+                    {
+                        if (count=5)
+                        {
+                            Location loc2=new Location (x,y);
+                            Flower flower2= new Flower();
+                            grid2.put (loc2,flower2);
+                            count=0;
+                            a=0;
+                        }
+                        else if ((count=5 || count=6) && (x,y) != null)
+                        {
+                            Location loc2=new Location (x,y);
+                            Flower flower2= new Flower();
+                            grid2.put (loc2,flower2);
+                            count=0;
+                            a=0;
+                        }
+                        }
+                    }
+                    }
+                    
                     
                     
                     
