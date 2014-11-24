@@ -108,7 +108,19 @@ public class GameOfLife
         // create the grid, of the specified size, that contains Actors
         Grid<Actor> grid = world.getGrid();
         
-        // insert magic here...
+        //create the grid, of the specified size, that contains Actors
+        BoundedGrid<Actor> grid2 = new BoundedGrid<Actor>(ROWS, COLS);
+        
+        // create a world based on the grid
+        world = new ActorWorld(grid2);
+        
+        // populate the game
+        populateGame();
+        
+        // display the newly constructed and populated world
+        world.show();
+        
+        int count
         
     }
     
