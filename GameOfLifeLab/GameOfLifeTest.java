@@ -101,6 +101,10 @@ public class GameOfLifeTest
          *  5 - - - - - - - 
          *  6 - - - - - - -
          */
+        GameOfLife game = new GameOfLife();
+        final int ROWS = game.getNumRows();
+        final int COLS = game.getNumCols();
+         
          for(int row = 0; row < ROWS; row++)
         {
             for(int col = 0; col < COLS; col++)
