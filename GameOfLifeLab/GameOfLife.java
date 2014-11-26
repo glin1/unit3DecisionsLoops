@@ -115,7 +115,8 @@ public class GameOfLife
         for (int x=1; x<5; x++)
             {
                 for (int y=1; y<5; y++)
-                {
+                {   
+                    count=0;
                     if  ( true)
                     {
                         Location loc4 = new Location(x-1, y-1);
@@ -211,7 +212,7 @@ public class GameOfLife
                             Location loc2=new Location (x,y);
                             Flower flower2= new Flower();
                             grid2.put (loc2,flower2);
-                            count=0;
+                            
                             
                         }
                         else if (count==5 || count==6)
@@ -224,7 +225,7 @@ public class GameOfLife
                                 Flower flower2= new Flower();
                                 grid2.put (loc2,flower2);
                             }
-                            count=0;
+                           
                             
                         }
                     }
