@@ -9,7 +9,7 @@ import info.gridworld.grid.Location;
  * Game of Life starter code. Demonstrates how to create and populate the game using the GridWorld framework.
  * Also demonstrates how to provide accessor methods to make the class testable by unit tests.
  * 
- * @author @gcschmit
+ * @author @Sam Lin
  * @version 24 Nov 2014
  */
 public class GameOfLife
@@ -111,12 +111,13 @@ public class GameOfLife
         BoundedGrid<Actor> grid2 = new BoundedGrid<Actor>(ROWS, COLS);
         
         int count =0;
-    
-        for (int x=1; x<5; x++)
+        for (int x=1; x < 6; x++)
             {
-                for (int y=1; y<5; y++)
+                for (int y=1; y< 6; y++)
                 {   
                     count=0;
+                    Location loc3 = new Location(x, y);
+                    Actor actor2 = world.getGrid().get(loc3);
                     if  ( true)
                     {
                         Location loc4 = new Location(x-1, y-1);
@@ -212,26 +213,17 @@ public class GameOfLife
                             Location loc2=new Location (x,y);
                             Flower flower2= new Flower();
                             grid2.put (loc2,flower2);
-                            
-                            
                         }
-                        else if (count==5 || count==6)
+                        else if (count==6 && actor2 != null)
                         {
-                            Location loc4 = new Location(x, y);
-                            Actor actor = world.getGrid().get(loc4);
-                            if (actor != null)
-                            {
-                                Location loc2=new Location (x,y);
-                                Flower flower2= new Flower();
-                                grid2.put (loc2,flower2);
-                            }
-                           
-                            
+                            Location loc2=new Location (x,y);
+                            Flower flower2= new Flower();
+                            grid2.put (loc2,flower2);
                         }
                     }
                 }   
             }
-        }
+        
         // display the newly constructed and populated world
         world.setGrid(grid2);
     }
@@ -288,3 +280,4 @@ public class GameOfLife
     }
 
 }
+
