@@ -77,8 +77,23 @@ Artifacts to Produce:
 	and my classmates to help me out. It is a very hard lab, but also a good
 	experience. I think I now have a better understanding of the grid world 
 	as well as for the nested loops. Also, for the test class, I studied the
-	way Mr.Schmit created the initial pattern and created my own.      
-
+	way Mr.Schmit created the initial pattern and created my own.     
+	
+	Design Document: Creating a nested for loop to test the 8 adjacent positions of 
+	a space to determine how many dead cells (represented by empty spaces) there is 
+	around one cell in a defined chart. The variable "count" represents the number 
+	of dead cells. This variable will be reset to 0 every time the loop runs.If 
+	count=5, then a new cell is drawn to the new graph. And if count=6 and the space 
+	possesses a alive cell, then draw the cell to the new graph. The variable "a" is 
+	made to ensure all if statements have a condition to run.
+	
+	Test plan:  first generation:   X X X
+					X   X
+					X   X
+    		    
+    		    second generation:    X
+    		    			X   X
+    		    		      X X   X X
 
 
 Submission:
