@@ -66,6 +66,19 @@ Artifacts to Produce:
 	like or dislike and why? What was surprising or unexpected? What did you
 	learn? What questions do you still have? What advice would you offer next
 	year's students?
+	
+	Game of life reflection: This lab is very challenging and confusing. 
+	I started the lab without knowing everything about the grid world. 
+	So I had to read thedocumentation to get a sense of understanding of
+	how the grid world works. I did not use the get location method, instead,
+	I wrote out all 8 positions adjacent to a cell, and test which of them
+	to determine how many empty spaces (dead cells) there is around. I also
+	had some problem with the main method, but I asked Allen and Mr.Schmit
+	and my classmates to help me out. It is a very hard lab, but also a good
+	experience. I think I now have a better understanding of the grid world 
+	as well as for the nested loops. Also, for the test class, I studied the
+	way Mr.Schmit created the initial pattern and created my own.      
+
 
 
 Submission:
