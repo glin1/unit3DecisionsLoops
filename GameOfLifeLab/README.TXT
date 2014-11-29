@@ -67,6 +67,27 @@ Artifacts to Produce:
 	learn? What questions do you still have? What advice would you offer next
 	year's students?
 	
+	Requirements Document:
+	how large is the grid? is it boundless?
+	A: The grid is gesigned to be 7 rows X 7 columns.
+	
+	what do live cells look like?
+	A: I use flowers to represent live cells.
+	
+	what do dead cells look like?
+	A: I use empty spaces to represent dead cells.
+	
+	what pattern is displayed? are multiple patterns available? are patterns chosen in code, chosen randomly, 
+	chosen by user? how long does the game run? does it run forever? does it prompt the user to continue?
+	A: The pattern of the third generation is diaplayed. The pattern is chosen in code. The game runs 3 times 
+	   and does not prompt the user to continue.
+	
+	what is the time interval between generations?
+	A: The time interval is 1 second.
+	
+	what about edge cases? does it wrap around?
+	A: I designed my pattern in a way it won't touch the edge. So I guess it shouldn't wrap around.
+	
 	Game of life reflection: This lab is very challenging and confusing. 
 	I started the lab without knowing everything about the grid world. 
 	So I had to read thedocumentation to get a sense of understanding of
