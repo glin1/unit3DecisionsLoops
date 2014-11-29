@@ -4,7 +4,7 @@ The goal of this lab is to apply your understanding of decision and loop
 	structures to implement a complex algorithm within the context of an
 	unfamiliar and significant software framework (GridWorld). In addition,
 	you will implement a unit test for your program using the JUnit framework
-	and create documentation for your program using JavaDoc.
+	and create documentation for your program using JavaDoc
 
 
 Requirements
