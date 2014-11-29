@@ -98,7 +98,7 @@ Artifacts to Produce:
 	and my classmates to help me out. It is a very hard lab, but also a good
 	experience. I think I now have a better understanding of the grid world 
 	as well as for the nested loops. Also, for the test class, I studied the
-	way Mr.Schmit created the initial pattern and created my own.     
+	way Mr.Schmit created the initial pattern and created my own final test.  
 	
 	Design Document: Creating a nested for loop to test the 8 adjacent positions of 
 	a space to determine how many dead cells (represented by empty spaces) there is 
