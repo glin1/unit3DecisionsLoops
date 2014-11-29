@@ -21,7 +21,7 @@ public class GameOfLife
     private final int ROWS = 7;
     private final int COLS = 7;
 
-    // constants for the location of the three cells initially alive
+    // constants for the location of the six cells initially alive
     private final int X1 = 2, Y1 = 3;
     private final int X2 = 3, Y2 = 2;
     private final int X3 = 3, Y3 = 3;
@@ -63,7 +63,7 @@ public class GameOfLife
         //  (alive cells contains actors; dead cells do not)
         Grid<Actor> grid = world.getGrid();
 
-        // create and add rocks (a type of Actor) to the three intial locations
+        // create and add flowers (a type of Actor) to the six intial locations
         Flower flower1 = new Flower();
         Location loc1 = new Location(X1, Y1);
         grid.put(loc1, flower1);
@@ -104,7 +104,7 @@ public class GameOfLife
       *  then draw the cell to the new graph. The variable "a" is made to ensure all if statements have a condition to run.
       */
 
-        // create the grid, of the specified size, that contains Actors
+        // In this example, an alive cell has a non-null actor and a dead cell has a null actor.
         Grid<Actor> grid = world.getGrid();
 
         //create the grid, of the specified size, that contains Actors
@@ -246,6 +246,7 @@ public class GameOfLife
     /**
      * Creates an instance of this class. Provides convenient execution.
      * Creates a for loop to run the createNextgeneration method by using the try method. 
+     * time interval between each stage is one second.
      */
     public static void main(String[] args) throws InterruptedException
     {
