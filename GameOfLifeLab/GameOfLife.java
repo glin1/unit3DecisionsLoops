@@ -245,19 +245,20 @@ public class GameOfLife
 
     /**
      * Creates an instance of this class. Provides convenient execution.
-     * Creates a while loop to run the createNextgeneration method. 
+     * Creates a for loop to run the createNextgeneration method by using the try method. 
      */
     public static void main(String[] args) throws InterruptedException
     {
         GameOfLife game = new GameOfLife();
-        int b=0;
-        while (b==0)
-        {
-            Thread.sleep(1000);
-            game.createNextGeneration();
+        try{
+            for (int i=0; i < 3; i++)
+            {
+                game.createNextGeneration();
+                Thread.sleep (1000);
+            }
+        }catch (Exception e){
+            System.out.println("No");
         }
-
     }
-
 }
 
