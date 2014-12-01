@@ -254,8 +254,8 @@ public class GameOfLife
         try{
             for (int i=0; i < 3; i++)
             {
-                game.createNextGeneration();
                 Thread.sleep (1000);
+                game.createNextGeneration();
             }
         }catch (Exception e){
             System.out.println("No");
